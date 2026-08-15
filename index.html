@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rien Larp Device</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <button id="missionList" onclick="openList()">Mission list...</button>
+
+    <p id="message">_Recieve Mission_</p>
+    <div class="buttons">
+        <button id="accButton" class="active" onclick="acceptMission()">_Mission_</button>
+        <button id="clearButton" class="deactive" onclick="clearMission()">_Clear_</button>
+        <button id="failButton" class="deactive" onclick="failMission()">_Fail_</button>
+    </div>
+
+    <div id="windowList">
+        <div class="windows">
+            <p>Mission List</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="index.js"></script>
