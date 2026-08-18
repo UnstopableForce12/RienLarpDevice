@@ -25,9 +25,26 @@
 
     <div id="windowList">
         <div class="windows">
-            <p>Mission List</p>
+            <div style="position: relative;">
+                <p>Mission List</p>
+                <button onclick="resetList()" style="position: absolute; right: 0; top: 0;">Reset Mission</button>
+            </div>
+            <div class="winCons">
+                <li>
+                    Be friend with random people
+                    <div class="actionList">
+                        <input type="checkbox" class="checkbox">
+                        <input type="text" onsubmit="">
+                        <button class="delete">Delete</button>
+                        <button>Edit</button>
+                    </div>
+                </li>
+            </div>
+            <button id="addMission" onclick="addMission()">Add Mission</button>
         </div>
     </div>
+
+    <p style="position: absolute; bottom: 0; left: 15px; color: grey;">@Sounds from Limbus Company</p>
 </body>
 
 </html>
