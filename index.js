@@ -121,7 +121,8 @@ function editButtonRender() {
 }
 
 function addMission() {
-    const mission = prompt('Insert new mission', '').trim();
+    const text = prompt('Insert new mission', '');
+    const mission = text.trim();
 
     if (!mission) {
         alert("no mission added");
